@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CF8B1E91B00314200BAEEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B1E81B00314200BAEEE7 /* AppDelegate.swift */; };
+		2CF8B1EB1B00314200BAEEE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B1EA1B00314200BAEEE7 /* ViewController.swift */; };
+		2CF8B1EE1B00314200BAEEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF8B1EC1B00314200BAEEE7 /* Main.storyboard */; };
+		2CF8B1F01B00314200BAEEE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF8B1EF1B00314200BAEEE7 /* Images.xcassets */; };
+		2CF8B1F31B00314200BAEEE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF8B1F11B00314200BAEEE7 /* LaunchScreen.xib */; };
+		2CF8B1FF1B00314200BAEEE7 /* RancidTomatoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8B1FE1B00314200BAEEE7 /* RancidTomatoesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CF8B1F91B00314200BAEEE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF8B1DB1B00314200BAEEE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF8B1E21B00314200BAEEE7;
+			remoteInfo = RancidTomatoes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CF8B1E31B00314200BAEEE7 /* RancidTomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RancidTomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF8B1E71B00314200BAEEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF8B1E81B00314200BAEEE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CF8B1EA1B00314200BAEEE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CF8B1ED1B00314200BAEEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CF8B1EF1B00314200BAEEE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2CF8B1F21B00314200BAEEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2CF8B1F81B00314200BAEEE7 /* RancidTomatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RancidTomatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF8B1FD1B00314200BAEEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF8B1FE1B00314200BAEEE7 /* RancidTomatoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RancidTomatoesTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CF8B1E01B00314200BAEEE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF8B1F51B00314200BAEEE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CF8B1DA1B00314200BAEEE7 = {
+			isa = PBXGroup;
+			children = (
+				2CF8B1E51B00314200BAEEE7 /* RancidTomatoes */,
+				2CF8B1FB1B00314200BAEEE7 /* RancidTomatoesTests */,
+				2CF8B1E41B00314200BAEEE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CF8B1E41B00314200BAEEE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CF8B1E31B00314200BAEEE7 /* RancidTomatoes.app */,
+				2CF8B1F81B00314200BAEEE7 /* RancidTomatoesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CF8B1E51B00314200BAEEE7 /* RancidTomatoes */ = {
+			isa = PBXGroup;
+			children = (
+				2CF8B1E81B00314200BAEEE7 /* AppDelegate.swift */,
+				2CF8B1EA1B00314200BAEEE7 /* ViewController.swift */,
+				2CF8B1EC1B00314200BAEEE7 /* Main.storyboard */,
+				2CF8B1EF1B00314200BAEEE7 /* Images.xcassets */,
+				2CF8B1F11B00314200BAEEE7 /* LaunchScreen.xib */,
+				2CF8B1E61B00314200BAEEE7 /* Supporting Files */,
+			);
+			path = RancidTomatoes;
+			sourceTree = "<group>";
+		};
+		2CF8B1E61B00314200BAEEE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CF8B1E71B00314200BAEEE7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CF8B1FB1B00314200BAEEE7 /* RancidTomatoesTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CF8B1FE1B00314200BAEEE7 /* RancidTomatoesTests.swift */,
+				2CF8B1FC1B00314200BAEEE7 /* Supporting Files */,
+			);
+			path = RancidTomatoesTests;
+			sourceTree = "<group>";
+		};
+		2CF8B1FC1B00314200BAEEE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CF8B1FD1B00314200BAEEE7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CF8B1E21B00314200BAEEE7 /* RancidTomatoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF8B2021B00314200BAEEE7 /* Build configuration list for PBXNativeTarget "RancidTomatoes" */;
+			buildPhases = (
+				2CF8B1DF1B00314200BAEEE7 /* Sources */,
+				2CF8B1E01B00314200BAEEE7 /* Frameworks */,
+				2CF8B1E11B00314200BAEEE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RancidTomatoes;
+			productName = RancidTomatoes;
+			productReference = 2CF8B1E31B00314200BAEEE7 /* RancidTomatoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CF8B1F71B00314200BAEEE7 /* RancidTomatoesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF8B2051B00314200BAEEE7 /* Build configuration list for PBXNativeTarget "RancidTomatoesTests" */;
+			buildPhases = (
+				2CF8B1F41B00314200BAEEE7 /* Sources */,
+				2CF8B1F51B00314200BAEEE7 /* Frameworks */,
+				2CF8B1F61B00314200BAEEE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF8B1FA1B00314200BAEEE7 /* PBXTargetDependency */,
+			);
+			name = RancidTomatoesTests;
+			productName = RancidTomatoesTests;
+			productReference = 2CF8B1F81B00314200BAEEE7 /* RancidTomatoesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CF8B1DB1B00314200BAEEE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Trostli;
+				TargetAttributes = {
+					2CF8B1E21B00314200BAEEE7 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					2CF8B1F71B00314200BAEEE7 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 2CF8B1E21B00314200BAEEE7;
+					};
+				};
+			};
+			buildConfigurationList = 2CF8B1DE1B00314200BAEEE7 /* Build configuration list for PBXProject "RancidTomatoes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CF8B1DA1B00314200BAEEE7;
+			productRefGroup = 2CF8B1E41B00314200BAEEE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CF8B1E21B00314200BAEEE7 /* RancidTomatoes */,
+				2CF8B1F71B00314200BAEEE7 /* RancidTomatoesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CF8B1E11B00314200BAEEE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF8B1EE1B00314200BAEEE7 /* Main.storyboard in Resources */,
+				2CF8B1F31B00314200BAEEE7 /* LaunchScreen.xib in Resources */,
+				2CF8B1F01B00314200BAEEE7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF8B1F61B00314200BAEEE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CF8B1DF1B00314200BAEEE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF8B1EB1B00314200BAEEE7 /* ViewController.swift in Sources */,
+				2CF8B1E91B00314200BAEEE7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF8B1F41B00314200BAEEE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF8B1FF1B00314200BAEEE7 /* RancidTomatoesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CF8B1FA1B00314200BAEEE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF8B1E21B00314200BAEEE7 /* RancidTomatoes */;
+			targetProxy = 2CF8B1F91B00314200BAEEE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CF8B1EC1B00314200BAEEE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF8B1ED1B00314200BAEEE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CF8B1F11B00314200BAEEE7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF8B1F21B00314200BAEEE7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CF8B2001B00314200BAEEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CF8B2011B00314200BAEEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CF8B2031B00314200BAEEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RancidTomatoes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CF8B2041B00314200BAEEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RancidTomatoes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2CF8B2061B00314200BAEEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RancidTomatoesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RancidTomatoes.app/RancidTomatoes";
+			};
+			name = Debug;
+		};
+		2CF8B2071B00314200BAEEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RancidTomatoesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RancidTomatoes.app/RancidTomatoes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CF8B1DE1B00314200BAEEE7 /* Build configuration list for PBXProject "RancidTomatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF8B2001B00314200BAEEE7 /* Debug */,
+				2CF8B2011B00314200BAEEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF8B2021B00314200BAEEE7 /* Build configuration list for PBXNativeTarget "RancidTomatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF8B2031B00314200BAEEE7 /* Debug */,
+				2CF8B2041B00314200BAEEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CF8B2051B00314200BAEEE7 /* Build configuration list for PBXNativeTarget "RancidTomatoesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF8B2061B00314200BAEEE7 /* Debug */,
+				2CF8B2071B00314200BAEEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CF8B1DB1B00314200BAEEE7 /* Project object */;
+}
