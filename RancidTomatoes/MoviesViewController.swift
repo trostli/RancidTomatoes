@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -24,6 +24,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         tableView.dataSource = self
         tableView.delegate = self
+        self.tableView.sectionHeaderHeight = 0
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -42,22 +43,26 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let request = NSURLRequest(URL: url!)
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
-            let json = (try? NSJSONSerialization.JSONObjectWithData(data!, options: [])) as? NSDictionary
-            if let json = json {
-                self.movies = json["movies"] as? [NSDictionary]
+            if let d = data {
+                let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(d, options: []) as! NSDictionary
+                self.movies = responseDictionary["movies"] as? [NSDictionary]
+
                 self.tableView.reloadData()
+                self.tableView.sectionHeaderHeight = 0
                 SVProgressHUD.dismiss()
                 self.refreshControl.endRefreshing()
+            } else {
+                if let e = error {
+                    print("Error: \(e)")
+                    self.tableView.sectionHeaderHeight = 0
+                }
             }
         }
     }
     
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    //  MARK: - Table View Delegate
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let movies = movies {
             return movies.count
@@ -65,7 +70,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             return 0
         }
     }
-    
+
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
@@ -100,6 +105,19 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 10))
+        view.backgroundColor = UIColor.grayColor()
+        let label = UILabel(frame: CGRect(x: 100, y: 4, width: 200, height: 20))
+        label.text = "Network Error"
+        label.textColor = UIColor.whiteColor()
+        
+        view.addSubview(label)
+        
+        return view
     }
 
    //  MARK: - Navigation

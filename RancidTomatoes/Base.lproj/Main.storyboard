@@ -114,22 +114,6 @@
             </objects>
             <point key="canvasLocation" x="3743" y="437"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="D2V-Zg-vdu">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4bH-MZ-RJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ena-pA-4U7" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="2dL-KT-Uhe"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="DpA-HU-OyO">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                </tabBarController>
-            </objects>
-            <point key="canvasLocation" x="682" y="437"/>
-        </scene>
         <!--Top DVD's-->
         <scene sceneID="iJh-lF-xDj">
             <objects>
@@ -260,6 +244,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t98-PC-pwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2755" y="1161"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="f4d-V3-uQ8">
+            <objects>
+                <viewController id="wVQ-bV-Nzz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qdv-4h-aXp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQ1-13-pkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

@@ -27,12 +27,17 @@ class MovieDetailsViewController: UIViewController {
     
     func setBackgroundImage() {
         var urlString = movie.valueForKeyPath("posters.original") as! String!
+        var url = NSURL(string: urlString)
+        // Set low-res image first
+        imageView.setImageWithURL(url)
+        
         var range = urlString.rangeOfString(".*cloudfront.net/", options: .RegularExpressionSearch)
         if let range = range {
             urlString = urlString.stringByReplacingCharactersInRange(range, withString: "https://content6.flixster.com/")
         }
         
-        let url = NSURL(string: urlString)!
+        url = NSURL(string: urlString)!
+        // Set high-res image after
         imageView.setImageWithURL(url)
     }
 
